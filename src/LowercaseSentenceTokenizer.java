@@ -38,6 +38,12 @@ public class LowercaseSentenceTokenizer implements Tokenizer {
     String[] words = sentence.split("\s+");
      // \s+ found from w3Schools
 
+
+    // iterate over the words array and change all words to lowercase
+    for (int i = 0; i < words.length; i++) {
+      words[i] = words[i].toLowerCase();
+    }
+
     // convert the words array into an list
     List<String> list = new ArrayList<>(Arrays.asList(words)); 
     
